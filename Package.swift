@@ -2,22 +2,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "SketchPad",
+    name: "Sketchy",
     platforms: [
         .macOS(.v14)
     ],
     products: [
-        .executable(name: "SketchPad", targets: ["SketchPad"])
+        .executable(name: "Sketchy", targets: ["Sketchy"])
     ],
     targets: [
         .executableTarget(
-            name: "SketchPad",
-            path: "Sources/SketchPad"
+            name: "Sketchy",
+            path: "Sources/Sketchy"
         ),
         .testTarget(
-            name: "SketchPadTests",
-            dependencies: ["SketchPad"],
-            path: "Sources/SketchPadTests"
+            name: "SketchyTests",
+            dependencies: ["Sketchy"],
+            path: "Sources/SketchyTests"
         )
     ]
 )

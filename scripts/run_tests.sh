@@ -9,11 +9,11 @@ swiftc \
     -target x86_64-apple-macosx14.0 \
     -sdk /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk \
     -parse-as-library \
-    Sources/SketchPad/Models/Stroke.swift \
-    Sources/SketchPad/Services/CanvasGeometry.swift \
-    Sources/SketchPad/Services/ImageCompositor.swift \
-    Sources/SketchPad/ViewModels/SketchViewModel.swift \
-    Sources/SketchPadTests/SketchPadTests.swift \
-    -o build/SketchPadTests
+    Sources/Sketchy/Models/Stroke.swift \
+    Sources/Sketchy/Services/CanvasGeometry.swift \
+    Sources/Sketchy/Services/ImageCompositor.swift \
+    Sources/Sketchy/ViewModels/SketchViewModel.swift \
+    Sources/SketchyTests/SketchyTests.swift \
+    -o build/SketchyTests
 
-./build/SketchPadTests
+./build/SketchyTests

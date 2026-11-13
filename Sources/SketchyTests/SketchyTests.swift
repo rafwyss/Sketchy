@@ -4,7 +4,7 @@ import Foundation
 
 @main
 @MainActor
-struct SketchPadTestRunner {
+struct SketchyTestRunner {
     static func main() {
         var passed = 0
         var failed = 0

@@ -1,4 +1,4 @@
-# SketchPad
+# Sketchy
 
 A lightweight, native macOS image sketching and annotation app built with SwiftUI and AppKit.
 
@@ -23,9 +23,9 @@ Requires macOS 14+ and Swift (Xcode Command Line Tools).
 # Run unit tests
 ./scripts/run_tests.sh
 
-# Build, sign, and install to /Applications/SketchPad.app
+# Build, sign, and install to /Applications/Sketchy.app
 ./scripts/build_app.sh
 
 # Launch
-open /Applications/SketchPad.app
+open /Applications/Sketchy.app
 ```

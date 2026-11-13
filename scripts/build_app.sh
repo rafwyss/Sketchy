@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-APP_NAME="SketchPad"
+APP_NAME="Sketchy"
 BUILD_DIR="$ROOT_DIR/build"
 APP_BUNDLE="$BUILD_DIR/$APP_NAME.app"
 CONTENTS_DIR="$APP_BUNDLE/Contents"
@@ -17,15 +17,15 @@ swiftc -O \
     -target x86_64-apple-macosx14.0 \
     -sdk /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk \
     -parse-as-library \
-    Sources/SketchPad/Models/Stroke.swift \
-    Sources/SketchPad/Services/CanvasGeometry.swift \
-    Sources/SketchPad/Services/ImageCompositor.swift \
-    Sources/SketchPad/ViewModels/SketchViewModel.swift \
-    Sources/SketchPad/Views/EmptyDropZoneView.swift \
-    Sources/SketchPad/Views/AnnotationToolbar.swift \
-    Sources/SketchPad/Views/SketchCanvasView.swift \
-    Sources/SketchPad/Views/ContentView.swift \
-    Sources/SketchPad/SketchPadApp.swift \
+    Sources/Sketchy/Models/Stroke.swift \
+    Sources/Sketchy/Services/CanvasGeometry.swift \
+    Sources/Sketchy/Services/ImageCompositor.swift \
+    Sources/Sketchy/ViewModels/SketchViewModel.swift \
+    Sources/Sketchy/Views/EmptyDropZoneView.swift \
+    Sources/Sketchy/Views/AnnotationToolbar.swift \
+    Sources/Sketchy/Views/SketchCanvasView.swift \
+    Sources/Sketchy/Views/ContentView.swift \
+    Sources/Sketchy/SketchyApp.swift \
     -o "$BIN_PATH"
 
 echo "Assembling $APP_BUNDLE..."
@@ -42,15 +42,15 @@ cat > "$CONTENTS_DIR/Info.plist" << 'EOF'
     <key>CFBundleDevelopmentRegion</key>
     <string>en</string>
     <key>CFBundleExecutable</key>
-    <string>SketchPad</string>
+    <string>Sketchy</string>
     <key>CFBundleIconFile</key>
     <string>AppIcon</string>
     <key>CFBundleIdentifier</key>
-    <string>com.raffaelewyss.SketchPad</string>
+    <string>com.raffaelewyss.Sketchy</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
-    <string>SketchPad</string>
+    <string>Sketchy</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>

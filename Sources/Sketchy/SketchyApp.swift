@@ -13,12 +13,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 }
 
 @main
-struct SketchPadApp: App {
+struct SketchyApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @State private var viewModel = SketchViewModel()
 
     var body: some Scene {
-        WindowGroup("SketchPad") {
+        WindowGroup("Sketchy") {
             ContentView(viewModel: viewModel)
         }
         .windowStyle(.automatic)

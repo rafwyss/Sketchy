@@ -3,7 +3,7 @@ import Observation
 import SwiftUI
 import UniformTypeIdentifiers
 
-/// Central state and I/O coordinator for SketchPad.
+/// Central state and I/O coordinator for Sketchy.
 @MainActor
 @Observable
 public final class SketchViewModel {
